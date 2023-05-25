@@ -1,0 +1,80 @@
+@use 'vars';
+
+.buy {
+  display: flex;
+  justify-content: center;
+}
+
+.multi-screen {
+  position: absolute;
+  background-color: vars.$clrRed;
+  transition: transform 1s ease-in;
+  transform: translateY(85%);
+
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+.multi-screen-on{
+  transform: translateY(-85%);
+
+}
+
+.multi__tittle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+
+
+.multi{
+  display: flex;
+  align-items: center;  
+  gap: 10px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  display: flex;
+  margin: 0 10px;
+
+  &__button,
+  &__auto{
+    width: 3rem;
+    height: 1.5rem;
+    background-color: vars.$clrBack;
+  }
+  
+  &__button:hover{
+    border: 1px solid vars.$clrBack;
+    background-color: vars.$clrRed;
+  }
+
+
+
+  
+}
+
+.obtions__buttons {
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  flex-direction: column;
+
+  .button {
+    width: 5rem;
+    height: 1.8rem;
+  }
+
+ 
+  
+}
+
+.close{
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+

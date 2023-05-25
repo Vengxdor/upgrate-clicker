@@ -1,0 +1,58 @@
+@use "multi";
+@use "vars";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  background-color: vars.$clrBack;
+  color: #fff;
+  overflow: hidden;
+  user-select: none;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  background-color: vars.$clrRed;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*
+      points
+*/
+
+.points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.click__number {
+  font-size: 10rem;
+}
+
+.click-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+
+.disabled{
+  display: none;
+}
+
+.enabled{
+  display: block;
+}

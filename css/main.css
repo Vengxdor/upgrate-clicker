@@ -1,0 +1,116 @@
+.buy {
+  display: flex;
+  justify-content: center;
+}
+
+.multi-screen {
+  position: absolute;
+  background-color: #ac2020;
+  transition: transform 1s ease-in;
+  transform: translateY(85%);
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.multi-screen-on {
+  transform: translateY(-85%);
+}
+
+.multi__tittle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.multi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  display: flex;
+  margin: 0 10px;
+}
+.multi__button, .multi__auto {
+  width: 3rem;
+  height: 1.5rem;
+  background-color: #222;
+}
+.multi__button:hover {
+  border: 1px solid #222;
+  background-color: #ac2020;
+}
+
+.obtions__buttons {
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  flex-direction: column;
+}
+.obtions__buttons .button {
+  width: 5rem;
+  height: 1.8rem;
+}
+
+.close {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  overflow: hidden;
+  user-select: none;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  background-color: #ac2020;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*
+      points
+*/
+.points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.click__number {
+  font-size: 10rem;
+}
+
+.click-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.disabled {
+  display: none;
+}
+
+.enabled {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
